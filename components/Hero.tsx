@@ -172,3 +172,210 @@ export default function Hero() {
             </div>
 
           </motion.div>
+          {/* RIGHT */}
+
+          <motion.div
+            initial={{ opacity: 0, x: 80 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: .9 }}
+            className="relative"
+          >
+
+            {/* Background Card */}
+
+            <div className="rounded-3xl border border-white/10 bg-white/5 backdrop-blur-xl p-8 shadow-2xl">
+
+              {/* Header */}
+
+              <div className="flex items-center justify-between">
+
+                <div>
+
+                  <p className="text-gray-400 text-sm">
+
+                    Dashboard Rebate
+
+                  </p>
+
+                  <h2 className="text-3xl font-bold mt-1">
+
+                    OnePercent FX
+
+                  </h2>
+
+                </div>
+
+                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-cyan-400 flex items-center justify-center shadow-lg shadow-blue-500/40">
+
+                  <TrendingUp size={34} />
+
+                </div>
+
+              </div>
+
+              {/* Income */}
+
+              <div className="mt-10 rounded-2xl bg-slate-900/70 border border-white/10 p-6">
+
+                <p className="text-gray-400">
+
+                  Total Rebate
+
+                </p>
+
+                <h3 className="text-5xl font-black mt-3 text-green-400">
+
+                  100%
+
+                </h3>
+
+                <p className="text-gray-400 mt-2">
+
+                  Seluruh komisi dikembalikan kepada trader.
+
+                </p>
+
+              </div>
+
+              {/* Features */}
+
+              <div className="grid grid-cols-2 gap-5 mt-8">
+
+                <div className="rounded-2xl bg-slate-900/60 p-5 border border-white/10">
+
+                  <ShieldCheck
+                    className="text-blue-400 mb-4"
+                    size={34}
+                  />
+
+                  <h4 className="font-bold text-lg">
+
+                    Aman
+
+                  </h4>
+
+                  <p className="text-sm text-gray-400 mt-2">
+
+                    Sistem aman dan transparan.
+
+                  </p>
+
+                </div>
+
+                <div className="rounded-2xl bg-slate-900/60 p-5 border border-white/10">
+
+                  <Wallet
+                    className="text-green-400 mb-4"
+                    size={34}
+                  />
+
+                  <h4 className="font-bold text-lg">
+
+                    Daily WD
+
+                  </h4>
+
+                  <p className="text-sm text-gray-400 mt-2">
+
+                    Withdraw rebate setiap hari.
+
+                  </p>
+
+                </div>
+
+                <div className="rounded-2xl bg-slate-900/60 p-5 border border-white/10">
+
+                  <Bot
+                    className="text-cyan-400 mb-4"
+                    size={34}
+                  />
+
+                  <h4 className="font-bold text-lg">
+
+                    Monitoring Bot
+
+                  </h4>
+
+                  <p className="text-sm text-gray-400 mt-2">
+
+                    Cek rebate kapan saja secara real-time.
+
+                  </p>
+
+                </div>
+
+                <div className="rounded-2xl bg-slate-900/60 p-5 border border-white/10">
+
+                  <TrendingUp
+                    className="text-yellow-400 mb-4"
+                    size={34}
+                  />
+
+                  <h4 className="font-bold text-lg">
+
+                    Profit Maksimal
+
+                  </h4>
+
+                  <p className="text-sm text-gray-400 mt-2">
+
+                    Trading seperti biasa, dapatkan keuntungan tambahan.
+
+                  </p>
+
+                </div>
+
+              </div>
+
+              {/* CTA */}
+
+              <div className="mt-8">
+
+                <a
+                  href="https://t.me/ADMOnePercentsFX"
+                  target="_blank"
+                  className="block w-full text-center py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 hover:opacity-90 transition font-bold text-lg shadow-lg shadow-blue-500/30"
+                >
+                  🚀 Daftarkan Akun Anda Disini
+                </a>
+
+              </div>
+
+            </div>
+
+            {/* Floating Card 1 */}
+
+            <div className="absolute -top-6 -left-6 rounded-2xl bg-green-500 text-black px-5 py-4 font-bold shadow-xl rotate-[-8deg]">
+
+              +100% Rebate
+
+            </div>
+
+            {/* Floating Card 2 */}
+
+            <div className="absolute -bottom-6 -right-6 rounded-2xl bg-blue-500 px-5 py-4 shadow-xl rotate-[8deg]">
+
+              <p className="font-bold">
+
+                Withdraw
+
+              </p>
+
+              <p className="text-sm">
+
+                Setiap Hari
+
+              </p>
+
+            </div>
+
+          </motion.div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  );
+}
