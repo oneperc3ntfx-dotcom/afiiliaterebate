@@ -4,16 +4,18 @@ import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
 import Statistics from "@/components/Statistics";
 import FAQ from "@/components/FAQ";
+import CTA from "@/components/CTA";
 
 export default function Home() {
   return (
-   <>
+  <>
   <Navbar />
   <Hero />
   <Features />
   <HowItWorks />
   <Statistics />
   <FAQ />
+  <CTA />
 </>
   );
 }
